@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rueda Libre | Recorridos en bicicleta</title>
+    <style>
+        .lista-recorridos li {
+            max-width: 65ch;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .lista-recorridos p {
+            margin: 0.35rem 0 0;
+        }
+
+        .opciones-bicicletas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            max-width: 900px;
+            margin: 1.5rem auto;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        .opciones-bicicletas li {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+
+        .opciones-bicicletas h3 {
+            margin-top: 0;
+        }
+    </style>  
+</head>
+<body>
+    <header>
+        <div style="text-align: center ; margin-bottom: 80px;">
+        <img src="Rueda Libre Medellín Bike Tours.png" alt="Logo de Rueda Libre" width="200" height="200">
+        <h1>Rueda Libre</h1>
+        <p>Explora Medellín en bicicleta.</p>
+
+        <nav aria-label="Navegación principal">
+            <a href="#bicicletas">Bicicletas</a>
+            <a href="#recorridos">Recorridos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+      
+        <section aria-labelledby="inicio">
+         <div style="text-align: center ; margin-bottom: 50px;">
+            <h2 id="inicio">Muévete y descubre la ciudad</h2>
+            <p>Alquilamos bicicletas y organizamos recorridos guiados por Medellín.</p>
+          </div>
+        </section>
+     
+        <section id="bicicletas">
+            <div style="text-align: center ; margin-bottom: 50px;">
+            <h2>Alquiler de bicicletas</h2>
+            <p>Explora Medellín a tu ritmo: alquila una bicicleta para recorrer la ciudad. Para consultar disponibilidad y hacer una reserva, escríbenos con la fecha de tu visita y la cantidad de bicicletas que necesitas. Te responderemos con las opciones y los detalles del alquiler.</p>
+            </div>
+            <ul class="opciones-bicicletas" aria-label="Tipos de bicicletas">
+                <li>
+                    <h3>Bicicleta urbana</h3>
+                    <img src="ciclaurbana.jpg" alt="Bicicleta urbana" width="100" height="100">
+                    <p>Cómoda para pasear por la ciudad y recorrer trayectos tranquilos.</p>
+                </li>
+                <li>
+                    <h3>Bicicleta de montaña</h3>
+                    <img src="ciclamontaña.jpg" alt="Bicicleta de montaña" width="100" height="100">
+                    <p>Una opción para rutas con pendientes y terrenos variados.</p>
+                </li>
+                <li>
+                    <h3>Bicicleta eléctrica</h3>
+                    <img src="ciclaelectrica.jpg" alt="Bicicleta eléctrica" width="100" height="100">
+                    <p>La asistencia eléctrica ayuda a recorrer distancias largas y subir pendientes con menos esfuerzo.</p>
+                </li>
+            </ul>
+        </section>
+         
+        <section id="recorridos">
+            <div style="text-align: center ; margin-bottom: 50px;">
+            <h2>Recorridos guiados</h2> </div>
+            <ul style="display:flex; gap: 40px;" class="lista-recorridos">
+                <li> 
+                    <aside>
+                     <strong>Nutibara</strong>
+                     <p>Recorreremos sectores de los barrios Laureles y Belén, inicio: Estación Estadio. visitaremos escenarios deportivos (sector estadio) y pueblito paisa (sector Belén).</p>
+                   </aside>
+                </li>
+                <li>
+                    <aside style="flex: 1;">
+                     <strong>Fincas de flores de Santa Elena</strong>
+                     <p>Pedalearemos por Santa Elena para conocer fincas dedicadas al cultivo de flores y disfrutar de sus paisajes rurales. Una ruta para acercarse a la tradición floricultora de la zona.</p>
+                    </aside>
+                </li>
+                <li>
+                    <aside style="flex: 1;">
+                     <strong>El Poblado</strong>
+                     <p>Descubre los encantos del barrio El Poblado en un recorrido en bicicleta. Visitaremos sus principales avenidas, plazas y puntos de interés histórico.</p>
+                    </aside>
+                </li>
+                
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p><a href="mailto:correo@ejemplo.com">Escríbenos</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Rueda Libre — Medellín, Colombia</p>
+    </footer>
+</body>
+</html>
